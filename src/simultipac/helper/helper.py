@@ -4,7 +4,7 @@
 def printc(*args, color="cyan"):
     """Print colored messages."""
     dict_c = {
-        "red": "\x1B[31m",
+        "red": "\x1b[31m",
         "blue": "\x1b[34m",
         "green": "\x1b[32m",
         "magenta": "\x1b[35m",
