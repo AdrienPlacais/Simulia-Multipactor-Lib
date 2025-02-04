@@ -297,7 +297,7 @@ def _filter_source_id(
 
 
 def _filter_out_dead_at_end(
-    input_dict: dict[int, Particle]
+    input_dict: dict[int, Particle],
 ) -> dict[int, Particle]:
     """Filter out Particles that collisioned during simulation."""
     particles_alive_at_end = {
@@ -317,7 +317,7 @@ def _filter_out_alive_at_end(
 
 
 def _filter_out_part_with_one_time_step(
-    input_dict: dict[int, Particle]
+    input_dict: dict[int, Particle],
 ) -> dict[int, Particle]:
     """Remove particle with only one known position.
 
